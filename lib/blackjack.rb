@@ -28,8 +28,9 @@ def initial_round
   opening_deal
 end
 
-def hit?
-  # code hit? here
+def hit?(current_total)
+  prompt_user
+  get_user_input
 end
 
 def invalid_command
