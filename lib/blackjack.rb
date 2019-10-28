@@ -32,12 +32,11 @@ def hit?(current_total)
   prompt_user
   action = get_user_input.downcase
   if action == "s"
-    current_total += deal_card
     current_total
   elsif action == "h"
-    
+    current_total += deal_card
   else
-    
+    invalid_command
   end
 end
 
