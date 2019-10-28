@@ -31,10 +31,10 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input
-  if action == 's'
+  if action.downcase == "s"
     current_total += deal_card
   elsif
-    
+    action.downcase == "h"
   else
     
   end
