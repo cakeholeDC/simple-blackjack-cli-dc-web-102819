@@ -31,7 +31,13 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input
-  if action == 
+  if action == 's'
+    current_total += deal_card
+  elsif
+    
+  else
+    
+  end
 end
 
 def invalid_command
