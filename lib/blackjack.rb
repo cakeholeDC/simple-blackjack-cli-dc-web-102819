@@ -31,10 +31,11 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input.downcase
-  while action != "s" && action != "h" do
+  until action != "s" && action != "h" do
     invalid_command
     prompt_user
     action = get_user_input.downcase
+  end
   if action == "s"
     current_total
   elsif action == "h"
