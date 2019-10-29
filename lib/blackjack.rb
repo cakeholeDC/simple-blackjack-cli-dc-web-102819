@@ -40,7 +40,7 @@ def hit?(current_total)
   
   if action == "h"
     current_total += deal_card
-    display_card_total(current_total)
+    # display_card_total(current_total)
   else
     invalid_command
   end
