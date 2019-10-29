@@ -30,11 +30,11 @@ end
 
 def hit?(current_total)
   prompt_user
-  action = get_user_input.downcase
+  action = get_user_input
   until action == "s" || action == "h" do
     invalid_command
     prompt_user
-    action = get_user_input.downcase
+    action = get_user_input
   end
   if action == "s"
     display_card_total(current_total)
