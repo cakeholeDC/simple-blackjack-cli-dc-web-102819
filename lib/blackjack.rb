@@ -37,9 +37,10 @@ def hit?(current_total)
     action = get_user_input.downcase
   end
   if action == "s"
-    current_total
+    display_card_total(current_total)
   elsif action == "h"
     current_total += deal_card
+    display_card_total(current_total)
   else
     invalid_command
   end
@@ -54,6 +55,8 @@ end
 #####################################################
 
 def runner
-  # code runner here
+  welcome
+  initial_round
+  hit?
 end
     
