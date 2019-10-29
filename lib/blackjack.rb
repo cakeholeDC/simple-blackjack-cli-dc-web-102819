@@ -37,6 +37,7 @@ def hit?(current_total)
     prompt_user
     action = get_user_input
   end
+  
   if action == "s"
     display_card_total(current_total)
   elsif action == "h"
