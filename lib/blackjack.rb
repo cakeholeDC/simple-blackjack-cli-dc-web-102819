@@ -41,7 +41,6 @@ def hit?(current_total)
   elsif action == "h"
     current_total += deal_card
     display_card_total(current_total)
-    hit?
   else
     invalid_command
   end
