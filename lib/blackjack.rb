@@ -31,6 +31,7 @@ end
 def hit?(current_total)
   prompt_user
   action = get_user_input
+  
   until action == "s" || action == "h" do
     invalid_command
     prompt_user
