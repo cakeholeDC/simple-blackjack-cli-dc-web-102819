@@ -30,7 +30,7 @@ end
 
 def hit?(current_total)
   prompt_user
-  action = get_user_input
+  action = get_user_input.to_i
   until action == "s" || action == "h" do
     invalid_command
     prompt_user
